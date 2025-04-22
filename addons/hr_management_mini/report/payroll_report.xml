@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <!-- Báo cáo payroll nếu có -->
+        <report
+            id="payroll_report"
+            model="hr.payroll"
+            string="Payroll Report"
+            report_type="qweb-pdf"
+            file="hr_management_mini.payroll_report"
+            name="hr_management_mini.payroll_report"/>
+    </data>
+</odoo>
