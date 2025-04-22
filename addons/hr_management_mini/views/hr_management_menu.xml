@@ -1,0 +1,49 @@
+<odoo>
+    <data>
+
+        <!-- Actions -->
+        <record id="hr_employee_action" model="ir.actions.act_window">
+            <field name="name">Employees</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_department_action" model="ir.actions.act_window">
+            <field name="name">Departments</field>
+            <field name="res_model">hr.department</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_payroll_action" model="ir.actions.act_window">
+            <field name="name">Payroll</field>
+            <field name="res_model">hr.payroll</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_attendance_action" model="ir.actions.act_window">
+            <field name="name">Attendance</field>
+            <field name="res_model">hr.attendance</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menu Structure -->
+        <menuitem id="hr_management_menu" name="HR Management" sequence="10"/>
+
+        <menuitem id="hr_employee_menu" name="Employees"
+                  parent="hr_management_menu"
+                  action="hr_employee_action"/>
+
+        <menuitem id="hr_department_menu" name="Departments"
+                  parent="hr_management_menu"
+                  action="hr_department_action"/>
+
+        <menuitem id="hr_payroll_menu" name="Payroll"
+                  parent="hr_management_menu"
+                  action="hr_payroll_action"/>
+
+        <menuitem id="hr_attendance_menu" name="Attendance"
+                  parent="hr_management_menu"
+                  action="hr_attendance_action"/>
+
+    </data>
+</odoo>

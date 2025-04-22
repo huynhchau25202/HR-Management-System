@@ -1,0 +1,12 @@
+<odoo>
+    <data>
+        <!-- Báo cáo cho biểu đồ tổng lương -->
+        <report
+            id="salary_chart_report"
+            model="hr.payroll"
+            string="Salary Chart"
+            report_type="qweb-pdf"
+            file="hr_management_mini.salary_chart"
+            name="hr_management_mini.salary_chart"/>
+    </data>
+</odoo>

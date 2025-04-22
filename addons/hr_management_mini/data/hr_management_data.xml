@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record id="default_department" model="hr.department">
+            <field name="name">Sales</field>
+            <field name="company_id" ref="base.main_company"/>
+        </record>
+        
+        <!-- Đảm bảo phần tử report nằm trong <data> -->
+        <report id="my_report" model="hr.department" string="Department Report" report_type="qweb-pdf" name="your_module.report_template"/>
+    </data>
+</odoo>
